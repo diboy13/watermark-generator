@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Watermark Generator</title>
-<link href="https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0f0f0f;
@@ -15,7 +15,7 @@
     --accent2: #e05c00;
     --text: #e8e8e8;
     --muted: #888;
-    --font: 'Droid Sans', sans-serif;
+    --font: 'Noto Sans', sans-serif;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -900,7 +900,7 @@ function render() {
   const boxRgb  = hexToRgb(boxColorHex);
   const boxFill = `rgba(${boxRgb.r},${boxRgb.g},${boxRgb.b},${boxOpacity})`;
 
-  ctx.font = `${fontSize}px 'Droid Sans', sans-serif`;
+  ctx.font = `${fontSize}px 'Noto Sans', sans-serif`;
   ctx.textBaseline = 'top';
 
   const lineHeight = fontSize + boxPadY * 2;
